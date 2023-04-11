@@ -1,15 +1,13 @@
-import { Box } from "@mui/material";
-import { Navbar } from "./Navbar";
-import { ContentSection } from "./ContentSection";
-import { AdvertisingSection } from "./AdvertisingSection";
+import { ThemeProvider } from "@mui/material";
+import { HomePage } from "./pages/HomePage";
+
+import defaultTheme from "./data/defaultTheme";
 
 function App() {
   return (
-    <Box>
-      <AdvertisingSection />
-      <Navbar />
-      <ContentSection />
-    </Box>
+    <ThemeProvider theme={defaultTheme}>
+      <HomePage />
+    </ThemeProvider>
   );
 }
 
