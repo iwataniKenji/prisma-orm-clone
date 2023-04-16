@@ -8,7 +8,7 @@ export function HeroColoredText({ children }: Props) {
   return (
     <Typography
       sx={{
-        fontSize: 60,
+        fontSize: { xs: 40, md: 60 },
         mb: 5,
         fontWeight: 700,
         fontFamily: "Barlow",
