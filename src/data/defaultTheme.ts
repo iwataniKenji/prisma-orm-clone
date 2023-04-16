@@ -3,7 +3,7 @@ import { createTheme } from "@mui/material";
 export default createTheme({
   typography: {
     fontSize: 14,
-    fontFamily: "'Inter', sans-serif;",
+    fontFamily: "'Inter', sans-serif",
   },
   palette: {
     primary: {

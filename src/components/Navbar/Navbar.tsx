@@ -1,57 +1,61 @@
-import { Box, Container, IconButton } from "@mui/material";
-import { NavBarMenuItem } from "./NavBarMenuItem";
-import { ContainedButton } from "../ContainedButton";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import MenuIcon from "@mui/icons-material/Menu";
+import { Box, Container } from "@mui/material";
+import { DesktopMenu } from "./DesktopMenu";
+import { MobileMenu } from "./MobileMenu";
 import prismaLogo from "../../assets/logo-dark.svg";
 
 const menuItems = ["Product", "Docs", "Developer", "Use Cases", "Company"];
 
 export function Navbar() {
+  const isMuiComponent = false;
+
+  if (isMuiComponent) {
+    return (
+      <Box
+        sx={{
+          backgroundColor: "white",
+          py: { xs: 3, lg: 2 },
+          borderBottom: { xs: "1px solid #e2e8f0", lg: "none" },
+        }}
+      >
+        <Container
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+          maxWidth="xl"
+        >
+          <Box component="img" src={prismaLogo} />
+
+          <DesktopMenu menuItems={menuItems} />
+          <MobileMenu menuItems={menuItems} />
+        </Container>
+      </Box>
+    );
+  }
+
   return (
-    <Box
-      sx={{
-        backgroundColor: "white",
-        py: { xs: 3, lg: 2 },
-        borderBottom: { xs: "1px solid #e2e8f0", lg: "none" },
+    <div
+      style={{
+        backgroundColor: "#fff",
+        padding: "16px 0",
+        borderBottom: "none",
       }}
     >
-      <Container
-        sx={{
+      <div
+        style={{
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
+          margin: "0 auto",
+          maxWidth: "1200px",
         }}
-        maxWidth="xl"
       >
-        <Box component="img" src={prismaLogo} />
+        <img src={prismaLogo} />
 
-        <Box sx={{ display: { xs: "none", lg: "flex" }, gap: 6 }}>
-          {menuItems.map((title) => (
-            <NavBarMenuItem key={title}>{title}</NavBarMenuItem>
-          ))}
-        </Box>
-
-        <Box
-          sx={{
-            display: { xs: "none", lg: "flex" },
-            alignItems: "center",
-            gap: 6,
-          }}
-        >
-          <ContainedButton>Get Started</ContainedButton>
-          <IconButton>
-            <GitHubIcon sx={{ color: "black" }} />
-          </IconButton>
-        </Box>
-
-        {/* mobile */}
-        <Box sx={{ display: { xs: "block", lg: "none" } }}>
-          <IconButton sx={{ height: 60, width: 60 }}>
-            <MenuIcon />
-          </IconButton>
-        </Box>
-      </Container>
-    </Box>
+        <DesktopMenu menuItems={menuItems} />
+        <MobileMenu menuItems={menuItems} />
+      </div>
+    </div>
   );
 }

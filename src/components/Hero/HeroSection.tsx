@@ -4,26 +4,59 @@ import { HeroVideoSection } from "./HeroVideoSection";
 import heroBackground from "../../assets/hero-lines.svg";
 
 export function ContentSection() {
+  const isMuiComponent = false;
+
+  if (isMuiComponent) {
+    return (
+      <Box
+        sx={{
+          px: 2,
+          py: { xs: 4, md: 13 },
+          backgroundColor: "rgb(247, 250, 252)",
+          backgroundImage: `url(${heroBackground})`,
+        }}
+      >
+        <Container maxWidth="xl">
+          <Grid container sx={{ display: "flex", alignItems: "center" }}>
+            <Grid item xs={12} lg={6} mb={6}>
+              <HeroTextSection />
+            </Grid>
+
+            <Grid item xs={12} lg={6} sx={{ height: { xs: 400, lg: 350 } }}>
+              <HeroVideoSection />
+            </Grid>
+          </Grid>
+        </Container>
+      </Box>
+    );
+  }
+
   return (
-    <Box
-      sx={{
-        px: 2,
-        py: { xs: 4, md: 13 },
+    <div
+      style={{
+        padding: "104px 16px",
         backgroundColor: "rgb(247, 250, 252)",
         backgroundImage: `url(${heroBackground})`,
       }}
     >
-      <Container sx={{ display: "flex" }} maxWidth="xl">
-        <Grid container sx={{ display: "flex", alignItems: "center" }}>
-          <Grid item xs={12} lg={6} mb={6}>
+      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <div
+          style={{
+            display: "grid",
+            alignItems: "center",
+            justifyContent: "space-between",
+            gridTemplateColumns: "1fr 1fr",
+            width: "100%",
+          }}
+        >
+          <div style={{ marginBottom: 48 }}>
             <HeroTextSection />
-          </Grid>
-
-          <Grid item xs={12} lg={6} sx={{ height: { xs: 400, lg: 350 } }}>
+          </div>
+          <div style={{ height: 350 }}>
             <HeroVideoSection />
-          </Grid>
-        </Grid>
-      </Container>
-    </Box>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
