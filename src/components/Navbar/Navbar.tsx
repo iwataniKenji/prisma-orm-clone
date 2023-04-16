@@ -26,7 +26,7 @@ export function Navbar({ isDesktopSize }: Props) {
           maxWidth: "75rem",
         }}
       >
-        <img src={prismaLogo} />
+        <img src={prismaLogo} style={{ cursor: "pointer" }} />
 
         {isDesktopSize ? (
           <DesktopMenu menuItems={menuItems} />
@@ -53,7 +53,7 @@ export function Navbar({ isDesktopSize }: Props) {
   //       }}
   //       maxWidth="xl"
   //     >
-  //       <Box component="img" src={prismaLogo} />
+  //       <Box component="img" src={prismaLogo} sx={{ cursor: "pointer" }}/>
 
   //       <DesktopMenu menuItems={menuItems} />
   //       <MobileMenu menuItems={menuItems} />
