@@ -13,7 +13,7 @@ export function Navbar({ isDesktopSize }: Props) {
     <div
       style={{
         backgroundColor: "#fff",
-        padding: isDesktopSize ? "1rem 0" : "1.5rem 2rem",
+        padding: isDesktopSize ? "1rem 2rem" : "1.5rem 2rem",
         borderBottom: isDesktopSize ? "none" : "1px solid #e2e8f0",
       }}
     >
