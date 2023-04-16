@@ -58,8 +58,8 @@ export function HeroTextSection() {
     <>
       <p
         style={{
-          fontSize: 60,
-          marginBottom: 40,
+          fontSize: "3.75rem",
+          marginBottom: "2.5rem",
           fontWeight: 700,
           fontFamily: "Barlow",
           lineHeight: "1.2",
@@ -72,10 +72,10 @@ export function HeroTextSection() {
       </p>
       <p
         style={{
-          fontSize: 24,
+          fontSize: "1.5rem",
           fontFamily: "'Inter', sans-serif",
           lineHeight: "1.5",
-          margin: "32px 0",
+          margin: "2rem 0",
           color: "rgb(74, 85, 104)",
         }}
       >
@@ -84,14 +84,14 @@ export function HeroTextSection() {
         automated migrations, type-safety & auto-completion.
       </p>
 
-      <div style={{ display: "flex", gap: 16 }}>
+      <div style={{ display: "flex", gap: "1rem" }}>
         <button
           style={{
             padding: "0.75rem 1.25rem",
             fontFamily: "Barlow",
             fontWeight: 700,
-            fontSize: 20,
-            borderRadius: "5px",
+            fontSize: "1.25rem",
+            borderRadius: 5,
             backgroundColor: "rgb(90, 103, 216)",
             color: "#fff",
             border: "none",
@@ -107,7 +107,7 @@ export function HeroTextSection() {
             padding: "0.75rem 1.25rem",
             fontFamily: "Barlow",
             fontWeight: 700,
-            fontSize: 20,
+            fontSize: "1.25rem",
             borderRadius: "5px",
             backgroundColor: "#fff",
             color: "rgb(90, 103, 216)",

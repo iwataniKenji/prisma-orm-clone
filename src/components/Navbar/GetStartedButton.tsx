@@ -26,7 +26,7 @@ export function GetStartedButton() {
         padding: "0.75rem 1.5rem",
         fontFamily: "Inter, sans-serif",
         fontWeight: 700,
-        fontSize: 14,
+        fontSize: "0.875rem",
         borderRadius: "5px",
         backgroundColor: "rgb(90, 103, 216)",
         color: "#fff",

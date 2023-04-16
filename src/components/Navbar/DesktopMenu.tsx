@@ -37,7 +37,7 @@ export function DesktopMenu({ menuItems }: Props) {
 
   return (
     <>
-      <div style={{ display: "flex", gap: 48 }}>
+      <div style={{ display: "flex", gap: "3rem" }}>
         {menuItems.map((title) => (
           <NavBarMenuItem key={title}>{title}</NavBarMenuItem>
         ))}
@@ -47,7 +47,7 @@ export function DesktopMenu({ menuItems }: Props) {
         style={{
           display: "flex",
           alignItems: "center",
-          gap: 48,
+          gap: "3rem",
         }}
       >
         <GetStartedButton />
@@ -57,8 +57,8 @@ export function DesktopMenu({ menuItems }: Props) {
             backgroundColor: "transparent",
             border: "none",
             borderRadius: "50%",
-            height: "40px",
-            width: "40px",
+            height: "2.5rem",
+            width: "2.5rem",
           }}
         >
           <GitHubIcon sx={{ color: "black" }} />

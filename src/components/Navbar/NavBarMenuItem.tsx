@@ -25,7 +25,7 @@ export function NavBarMenuItem({ children }: Props) {
     <p
       style={{
         color: "rgb(45, 55, 72)",
-        fontSize: 16,
+        fontSize: "1rem",
         fontWeight: 600,
         fontFamily: "Inter, sans-serif",
         margin: 0,

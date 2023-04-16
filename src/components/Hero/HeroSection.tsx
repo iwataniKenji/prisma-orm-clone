@@ -34,12 +34,12 @@ export function ContentSection() {
   return (
     <div
       style={{
-        padding: "104px 16px",
+        padding: "6.5rem 1rem",
         backgroundColor: "rgb(247, 250, 252)",
         backgroundImage: `url(${heroBackground})`,
       }}
     >
-      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+      <div style={{ maxWidth: "75rem", margin: "0 auto" }}>
         <div
           style={{
             display: "grid",

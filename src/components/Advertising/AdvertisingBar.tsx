@@ -36,16 +36,13 @@ export function AdvertisingSection() {
     );
   }
 
-  // same code but with native HTML elements
   return (
-    <div style={{ backgroundColor: "rgb(26, 32, 44)", padding: "16px 0" }}>
-      <div
-        style={{ margin: "0 auto", textAlign: "center", maxWidth: "1200px" }}
-      >
+    <div style={{ backgroundColor: "rgb(26, 32, 44)", padding: "1rem 0" }}>
+      <div style={{ margin: "0 auto", textAlign: "center", maxWidth: "75rem" }}>
         <a
           style={{
             color: "rgb(226, 232, 240)",
-            fontSize: 18,
+            fontSize: "1.125rem",
             display: "inline",
             fontFamily: "'Inter', sans-serif",
             textDecoration: "none",

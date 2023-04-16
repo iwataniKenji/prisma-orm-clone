@@ -29,8 +29,8 @@ export function MobileMenu({ menuItems }: Props) {
             backgroundColor: "transparent",
             border: "none",
             borderRadius: "50%",
-            height: "40px",
-            width: "40px",
+            height: "2.5rem",
+            width: "2.5rem",
           }}
         >
           <MenuIcon sx={{ height: 30, width: 30 }} />

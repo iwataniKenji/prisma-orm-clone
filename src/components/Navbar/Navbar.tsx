@@ -38,7 +38,7 @@ export function Navbar() {
     <div
       style={{
         backgroundColor: "#fff",
-        padding: "16px 0",
+        padding: "1rem 0",
         borderBottom: "none",
       }}
     >
@@ -48,7 +48,7 @@ export function Navbar() {
           justifyContent: "space-between",
           alignItems: "center",
           margin: "0 auto",
-          maxWidth: "1200px",
+          maxWidth: "75rem",
         }}
       >
         <img src={prismaLogo} />
