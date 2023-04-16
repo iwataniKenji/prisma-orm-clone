@@ -45,6 +45,7 @@ export function Navbar() {
           </IconButton>
         </Box>
 
+        {/* mobile */}
         <Box sx={{ display: { xs: "block", lg: "none" } }}>
           <IconButton sx={{ height: 60, width: 60 }}>
             <MenuIcon />
