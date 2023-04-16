@@ -1,25 +1,4 @@
-import { Button } from "@mui/material";
-
 export function GetStartedButton() {
-  const isMuiComponent = false;
-
-  if (isMuiComponent) {
-    return (
-      <Button
-        variant="contained"
-        sx={{
-          py: 1,
-          px: 3,
-          boxShadow: "none",
-          fontFamily: "Barlow",
-          fontWeight: 700,
-        }}
-      >
-        Get Started
-      </Button>
-    );
-  }
-
   return (
     <button
       style={{
@@ -37,4 +16,19 @@ export function GetStartedButton() {
       Get Started
     </button>
   );
+
+  // return (
+  //   <Button
+  //     variant="contained"
+  //     sx={{
+  //       py: 1,
+  //       px: 3,
+  //       boxShadow: "none",
+  //       fontFamily: "Barlow",
+  //       fontWeight: 700,
+  //     }}
+  //   >
+  //     Get Started
+  //   </Button>
+  // );
 }
