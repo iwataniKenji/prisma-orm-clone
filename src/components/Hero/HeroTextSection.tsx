@@ -30,7 +30,8 @@ export function HeroTextSection({ isDesktopSize }: Props) {
           color: "rgb(74, 85, 104)",
         }}
       >
-        Prisma unlocks a new level of <strong>developer experience </strong>
+        Prisma unlocks a new level of{" "}
+        <span style={{ fontWeight: 700 }}>developer experience </span>
         when working with databases thanks to its intuitive data model,
         automated migrations, type-safety & auto-completion.
       </p>

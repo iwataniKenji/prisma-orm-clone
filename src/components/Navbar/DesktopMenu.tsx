@@ -9,17 +9,23 @@ type Props = {
 export function DesktopMenu({ menuItems }: Props) {
   return (
     <>
-      <div style={{ display: "flex", gap: "3rem" }}>
-        {menuItems.map((title) => (
-          <NavBarMenuItem key={title}>{title}</NavBarMenuItem>
-        ))}
+      <div style={{ display: "flex", gap: "2.75rem" }}>
+        {menuItems.map((title) => {
+          const hasIcon = title !== "Docs";
+
+          return (
+            <NavBarMenuItem key={title} hasIcon={hasIcon}>
+              {title}
+            </NavBarMenuItem>
+          );
+        })}
       </div>
 
       <div
         style={{
           display: "flex",
           alignItems: "center",
-          gap: "3rem",
+          gap: "2.3rem",
         }}
       >
         <GetStartedButton />

@@ -4,7 +4,7 @@ type Props = {
 
 export function AdvertisingSection({ isDesktopSize }: Props) {
   return (
-    <div style={{ backgroundColor: "rgb(26, 32, 44)", padding: "1rem 0" }}>
+    <div style={{ backgroundColor: "rgb(26, 32, 44)", padding: "1.2rem 0" }}>
       <div style={{ margin: "0 auto", textAlign: "center", maxWidth: "75rem" }}>
         <a
           style={{
@@ -17,14 +17,14 @@ export function AdvertisingSection({ isDesktopSize }: Props) {
           href="#"
         >
           Up to 1000x faster database queries with{" "}
-          <strong
+          <span
             style={{
               color: "rgb(113, 232, 223)",
               fontWeight: 700,
             }}
           >
             Accelerate
-          </strong>{" "}
+          </span>{" "}
           ➜{" "}
           <p style={{ display: "inline", textDecoration: "underline" }}>
             Sign up for Early Access

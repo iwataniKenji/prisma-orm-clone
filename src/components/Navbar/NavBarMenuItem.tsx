@@ -1,20 +1,31 @@
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+
 type Props = {
+  hasIcon: boolean;
   children: string;
 };
 
-export function NavBarMenuItem({ children }: Props) {
+export function NavBarMenuItem({ hasIcon, children }: Props) {
   return (
-    <p
+    <div
       style={{
-        color: "rgb(45, 55, 72)",
-        fontSize: "1rem",
-        fontWeight: 600,
-        fontFamily: "Inter, sans-serif",
-        margin: 0,
+        display: "flex",
+        alignItems: "center",
       }}
     >
-      {children}
-    </p>
+      <p
+        style={{
+          color: "rgb(45, 55, 72)",
+          fontSize: "1rem",
+          fontWeight: 600,
+          fontFamily: "Inter, sans-serif",
+          margin: 0,
+        }}
+      >
+        {children}
+      </p>
+      {hasIcon && <KeyboardArrowDownIcon />}
+    </div>
   );
 
   // return (

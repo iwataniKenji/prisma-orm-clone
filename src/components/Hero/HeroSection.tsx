@@ -10,7 +10,7 @@ export function ContentSection({ isDesktopSize }: Props) {
   return (
     <div
       style={{
-        padding: isDesktopSize ? "6.5rem 1rem" : "4rem 1rem",
+        padding: isDesktopSize ? "6.5rem 1rem" : "2rem 1rem",
         backgroundColor: "rgb(247, 250, 252)",
         backgroundImage: `url(${heroBackground})`,
       }}
