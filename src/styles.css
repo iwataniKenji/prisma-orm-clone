@@ -12,6 +12,66 @@ body {
 }
 
 /*****************
+ BUTTONS 
+*****************/
+
+.get-started-button {
+  padding: 0.75rem 1.5rem;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  border-radius: 5px;
+  background-color: rgb(90, 103, 216);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.get-started-button:hover {
+  filter: brightness(0.9);
+}
+
+.github-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.contained-button {
+  padding: 0.75rem 1.25rem;
+  font-family: Barlow;
+  font-weight: 700;
+  font-size: 1.25rem;
+  background-color: rgb(90, 103, 216);
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.contained-button:hover {
+  filter: brightness(0.9);
+}
+
+.inline-button {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  font-family: Barlow;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  color: rgb(90, 103, 216);
+  border: 1px solid rgb(90, 103, 216);
+  cursor: pointer;
+}
+
+/*****************
  ADVERTISING BAR 
 *****************/
 
@@ -30,6 +90,8 @@ body {
   color: rgb(226, 232, 240);
   display: inline;
   text-decoration: none;
+
+  font-size: 0.875rem;
 }
 
 .advertising-colored-text {
@@ -40,6 +102,73 @@ body {
 .advertising-signup {
   display: inline;
   text-decoration: underline;
+}
+
+/*****************
+ NAVBAR SECTION
+*****************/
+
+.navbar {
+  background-color: #fff;
+  padding: 1.75rem 2rem;
+  borderbottom: 1px solid #e2e8f0;
+}
+
+.navbar-centralized {
+  margin: 0 auto;
+  max-width: 75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar img {
+  cursor: pointer;
+}
+
+/*****************
+ NAVBAR SECTION (MENU)
+*****************/
+
+.navbar-menu-mobile {
+  display: flex;
+}
+
+.navbar-hamburger {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 2.75rem;
+}
+
+.navbar-menu-item {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu-item p {
+  color: rgb(45, 55, 72);
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: Inter, sans-serif;
+  margin: 0;
+}
+
+/*****************
+ NAVBAR SECTION (RIGHT SECTION)
+*****************/
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 2.3rem;
 }
 
 /*****************
@@ -100,32 +229,6 @@ body {
   gap: 1rem;
 }
 
-.contained-button {
-  padding: 0.75rem 1.25rem;
-  font-family: Barlow;
-  font-weight: 700;
-  font-size: 1.25rem;
-  background-color: rgb(90, 103, 216);
-  color: #fff;
-  border: none;
-  border-radius: 0.25rem;
-  cursor: pointer;
-}
-
-.inline-button {
-  display: flex;
-  align-items: center;
-  padding: 0.75rem 1.25rem;
-  font-family: Barlow;
-  font-weight: 700;
-  font-size: 1.25rem;
-  border-radius: 0.25rem;
-  background-color: #fff;
-  color: rgb(90, 103, 216);
-  border: 1px solid rgb(90, 103, 216);
-  cursor: pointer;
-}
-
 /*****************
  HERO SECTION (RIGHT)
 *****************/
@@ -136,90 +239,4 @@ body {
 
 .hero-video {
   height: 100%;
-}
-
-/*****************
- NAVBAR SECTION
-*****************/
-
-.navbar {
-  background-color: #fff;
-}
-
-.navbar-centralized {
-  margin: 0 auto;
-  max-width: 75rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar img {
-  cursor: pointer;
-}
-
-/*****************
- NAVBAR SECTION (MENU)
-*****************/
-
-.navbar-menu-mobile {
-  display: flex;
-}
-
-.navbar-hamburger {
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  border-radius: 50%;
-  height: 2.5rem;
-  width: 2.5rem;
-}
-
-.navbar-menu {
-  display: flex;
-  gap: 2.75rem;
-}
-
-.navbar-menu-item {
-  display: flex;
-  align-items: center;
-}
-
-.navbar-menu-item p {
-  color: rgb(45, 55, 72);
-  font-size: 1rem;
-  font-weight: 600;
-  font-family: Inter, sans-serif;
-  margin: 0;
-}
-
-/*****************
- NAVBAR SECTION (RIGHT SECTION)
-*****************/
-
-.navbar-right {
-  display: flex;
-  align-items: center;
-  gap: 2.3rem;
-}
-
-.navbar-right-button {
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  border-radius: 50%;
-  height: 2.5rem;
-  width: 2.5rem;
-}
-
-.get-started-button {
-  padding: 0.75rem 1.5rem;
-  font-family: Inter, sans-serif;
-  font-weight: 700;
-  font-size: 0.875rem;
-  border-radius: 5px;
-  background-color: rgb(90, 103, 216);
-  color: #fff;
-  border: none;
-  cursor: pointer;
 }

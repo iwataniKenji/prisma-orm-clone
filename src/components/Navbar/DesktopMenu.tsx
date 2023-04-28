@@ -23,7 +23,7 @@ export function DesktopMenu({ menuItems }: Props) {
 
       <div className="navbar-right">
         <button className="get-started-button">Get Started</button>
-        <button className="navbar-right-button">
+        <button className="github-button">
           <GitHubIcon sx={{ color: "black" }} />
         </button>
       </div>
