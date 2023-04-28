@@ -11,22 +11,14 @@ type Props = {
 export function Navbar({ isDesktopSize }: Props) {
   return (
     <div
+      className="navbar"
       style={{
-        backgroundColor: "#fff",
         padding: isDesktopSize ? "0.75rem 2rem" : "1.75rem 2rem",
         borderBottom: isDesktopSize ? "none" : "1px solid #e2e8f0",
       }}
     >
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          margin: "0 auto",
-          maxWidth: "75rem",
-        }}
-      >
-        <img src={prismaLogo} style={{ cursor: "pointer" }} />
+      <div className="navbar-centralized">
+        <img src={prismaLogo} />
 
         {isDesktopSize ? (
           <DesktopMenu menuItems={menuItems} />
@@ -36,28 +28,4 @@ export function Navbar({ isDesktopSize }: Props) {
       </div>
     </div>
   );
-
-  // return (
-  //   <Box
-  //     sx={{
-  //       backgroundColor: "white",
-  //       py: { xs: 3, lg: 2 },
-  //       borderBottom: { xs: "1px solid #e2e8f0", lg: "none" },
-  //     }}
-  //   >
-  //     <Container
-  //       sx={{
-  //         display: "flex",
-  //         justifyContent: "space-between",
-  //         alignItems: "center",
-  //       }}
-  //       maxWidth="xl"
-  //     >
-  //       <Box component="img" src={prismaLogo} sx={{ cursor: "pointer" }}/>
-
-  //       <DesktopMenu menuItems={menuItems} />
-  //       <MobileMenu menuItems={menuItems} />
-  //     </Container>
-  //   </Box>
-  // )
 }

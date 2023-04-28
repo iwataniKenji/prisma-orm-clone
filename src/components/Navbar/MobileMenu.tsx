@@ -7,30 +7,11 @@ type Props = {
 export function MobileMenu({ menuItems }: Props) {
   return (
     <>
-      <div style={{ display: "flex" }}>
-        <button
-          style={{
-            cursor: "pointer",
-            backgroundColor: "transparent",
-            border: "none",
-            borderRadius: "50%",
-            height: "2.5rem",
-            width: "2.5rem",
-          }}
-        >
+      <div className="navbar-menu-mobile">
+        <button className="navbar-hamburger">
           <MenuIcon sx={{ height: 30, width: 30 }} />
         </button>
       </div>
     </>
   );
-
-  // return (
-  //   <>
-  //     <Box sx={{ display: { xs: "block", lg: "none" } }}>
-  //       <IconButton sx={{ height: 60, width: 60 }}>
-  //         <MenuIcon />
-  //       </IconButton>
-  //     </Box>
-  //   </>
-  // );
 }

@@ -1,3 +1,225 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
 body {
   margin: 0;
+}
+
+.home-page {
+  height: 100vh;
+  background-color: rgb(90, 103, 216);
+}
+
+/*****************
+ ADVERTISING BAR 
+*****************/
+
+.advertising-bar {
+  background-color: rgb(26, 32, 44);
+  padding: 1.2rem 0;
+}
+
+.advertising-bar-centralized {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 75rem;
+}
+
+.advertising-anchor {
+  color: rgb(226, 232, 240);
+  display: inline;
+  text-decoration: none;
+}
+
+.advertising-colored-text {
+  color: rgb(113, 232, 223);
+  font-weight: 700;
+}
+
+.advertising-signup {
+  display: inline;
+  text-decoration: underline;
+}
+
+/*****************
+ HERO SECTION
+*****************/
+
+.hero {
+  background-color: rgb(247, 250, 252);
+  background-image: url("./assets/hero-lines.svg");
+}
+
+.hero-centralized {
+  margin: 0 auto;
+  max-width: 75rem;
+}
+
+.hero-content {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/*****************
+ HERO SECTION (LEFT)
+*****************/
+
+.text-container {
+  margin-bottom: 48px;
+}
+
+.hero-title {
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  font-family: Barlow;
+  line-height: 1.2;
+  display: inline;
+}
+
+.hero-title span {
+  color: rgb(90, 103, 216);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  margin: 2rem 0;
+  color: rgb(74, 85, 104);
+}
+
+.hero-subtitle span {
+  font-weight: 700;
+}
+
+.hero-buttons-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.contained-button {
+  padding: 0.75rem 1.25rem;
+  font-family: Barlow;
+  font-weight: 700;
+  font-size: 1.25rem;
+  background-color: rgb(90, 103, 216);
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.inline-button {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  font-family: Barlow;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  color: rgb(90, 103, 216);
+  border: 1px solid rgb(90, 103, 216);
+  cursor: pointer;
+}
+
+/*****************
+ HERO SECTION (RIGHT)
+*****************/
+
+.video-container {
+  height: 350px;
+}
+
+.hero-video {
+  height: 100%;
+}
+
+/*****************
+ NAVBAR SECTION
+*****************/
+
+.navbar {
+  background-color: #fff;
+}
+
+.navbar-centralized {
+  margin: 0 auto;
+  max-width: 75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar img {
+  cursor: pointer;
+}
+
+/*****************
+ NAVBAR SECTION (MENU)
+*****************/
+
+.navbar-menu-mobile {
+  display: flex;
+}
+
+.navbar-hamburger {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 2.75rem;
+}
+
+.navbar-menu-item {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu-item p {
+  color: rgb(45, 55, 72);
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: Inter, sans-serif;
+  margin: 0;
+}
+
+/*****************
+ NAVBAR SECTION (RIGHT SECTION)
+*****************/
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 2.3rem;
+}
+
+.navbar-right-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.get-started-button {
+  padding: 0.75rem 1.5rem;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  border-radius: 5px;
+  background-color: rgb(90, 103, 216);
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }

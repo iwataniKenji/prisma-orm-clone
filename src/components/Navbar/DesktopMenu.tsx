@@ -1,6 +1,5 @@
-import { NavBarMenuItem } from "./NavBarMenuItem";
-import { GetStartedButton } from "./GetStartedButton";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 type Props = {
   menuItems: string[];
@@ -9,62 +8,25 @@ type Props = {
 export function DesktopMenu({ menuItems }: Props) {
   return (
     <>
-      <div style={{ display: "flex", gap: "2.75rem" }}>
+      <div className="navbar-menu">
         {menuItems.map((title) => {
           const hasIcon = title !== "Docs";
 
           return (
-            <NavBarMenuItem key={title} hasIcon={hasIcon}>
-              {title}
-            </NavBarMenuItem>
+            <div key={title} className="navbar-menu-item">
+              <p>{title}</p>
+              {hasIcon && <KeyboardArrowDownIcon />}
+            </div>
           );
         })}
       </div>
 
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: "2.3rem",
-        }}
-      >
-        <GetStartedButton />
-        <button
-          style={{
-            cursor: "pointer",
-            backgroundColor: "transparent",
-            border: "none",
-            borderRadius: "50%",
-            height: "2.5rem",
-            width: "2.5rem",
-          }}
-        >
+      <div className="navbar-right">
+        <button className="get-started-button">Get Started</button>
+        <button className="navbar-right-button">
           <GitHubIcon sx={{ color: "black" }} />
         </button>
       </div>
     </>
   );
-
-  // return (
-  //   <>
-  //     <Box sx={{ display: "flex", gap: 6 }}>
-  //       {menuItems.map((title) => (
-  //         <NavBarMenuItem key={title}>{title}</NavBarMenuItem>
-  //       ))}
-  //     </Box>
-
-  //     <Box
-  //       sx={{
-  //         display: "flex",
-  //         alignItems: "center",
-  //         gap: 6,
-  //       }}
-  //     >
-  //       <GetStartedButton />
-  //       <IconButton>
-  //         <GitHubIcon sx={{ color: "black" }} />
-  //       </IconButton>
-  //     </Box>
-  //   </>
-  // );
 }
